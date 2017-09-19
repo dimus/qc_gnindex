@@ -1,0 +1,111 @@
+
+
+
+Resolver has 2 additional exact matches because match includes some normalization
+
+96279b05-e9d8-5a7f-9ece-8c7aa331b52b: [{:input=>"HEA", :match=>"Hea", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+eab463cb-03ab-5545-857f-c1c4aea33157: [{:input=>"PAN", :match=>"Pan", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+
+
+
+Exact canonical matches unique for Resolver
+
+39771402-7ee5-5221-a735-07a5a090e751: [{:input=>"Alteromonas macleodii", :match=>"Alteromonas macleodii Baumann et al., 1972 emend. Yi et al., 2004 emend. Vandecandelaere et al., 2008", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+93299cb2-6dd8-5e76-b873-ca1c86ec8fdb: [{:input=>"Amaea (Scalina)", :match=>"Amaea", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+068ba036-4327-5abb-964e-a5c1f1a3b987: [{:input=>"Ampullina (Pseudamaura)", :match=>"Ampullina", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+4ebd7cd5-0723-59be-92dc-11e1906a28ce: [{:input=>"Bulla (Bulliopsis)", :match=>"Bulla", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+d187153b-7902-5050-90b1-ab06b7d8e355: [{:input=>"Cerastium holosteoides", :match=>"Cerastium holosteoides Fries emend. Hyl.", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+c7f34e1f-a642-5e2b-80cb-0a7ab4baee98: [{:input=>"Chlorobium phaeobacteroides", :match=>"Chlorobium phaeobacteroides Pfennig, 1968 emend. Imhoff, 2003", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+a05d0632-be88-5035-a8b6-e20999d645b5: [{:input=>"ChrysemysX", :match=>"Chrysemys", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+0189c1cc-6e1b-5844-910e-fa903153e01a: [{:input=>"ClavelinaX", :match=>"Clavelina", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+6ae6b5a3-6a9b-5c60-9976-718078eda1b9: [{:input=>"Clostridium acetobutylicum", :match=>"Clostridium acetobutylicum McCoy et al., 1926 emend. Keis et al., 2001", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+68a2e669-d5b4-5fc4-9f9a-0ebeb1fc74c0: [{:input=>"DendrodoaX", :match=>"Dendrodoa", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+2c287ee9-b839-5568-af1f-bdbf053361a2: [{:input=>"Desulfitobacterium hafniense", :match=>"Desulfitobacterium hafniense Christiansen and Ahring, 1996 emend. Niggemyer et al., 2001", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+09f33b54-a67f-5456-9738-b2f91812e5be: [{:input=>"DistapliaX", :match=>"Distaplia", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+93ab55b6-77f5-5688-bece-76cf59557cf2: [{:input=>"EudistomaX", :match=>"Eudistoma", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+9cc2e661-7946-5d68-8441-242d5ad15f42: [{:input=>"Geobacillus thermodenitrificans", :match=>"Geobacillus thermodenitrificans (Manachini et al., 2000) Nazina et al., 2001 emend. Cihan et. al., 2011", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+1c6a4f9a-8108-53ef-8e2c-be37f6626f09: [{:input=>"Glyptoactis (Claibornicardia)", :match=>"Glyptoactis", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+12e49514-24be-5127-93be-816b98b14185: [{:input=>"Leptodactylus gr. wagneri", :match=>"Leptodactylus", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+f4cc78b0-694e-53e0-88b9-2afcad28ed4d: [{:input=>"Methanococcus voltae A3", :match=>"Methanococcus voltae Balch and Wolfe, 1981 emend. Ward et al., 1989", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+b1d6747d-6aa3-5b7a-a8ed-7ca53c4b19ac: [{:input=>"Methanosarcina barkeri str. fusaro", :match=>"Methanosarcina barkeri Schnellen, 1947", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+acf684bf-2f0d-59b5-a2cb-c2fd5c01018c: [{:input=>"Methanospirillum hungatei", :match=>"Methanospirillum hungatei Ferry et al., 1974 emend. Iino et al., 2010", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+021eedef-3108-57f0-b540-0042cc65fafc: [{:input=>"Methanospirillum hungatei jf-1", :match=>"Methanospirillum hungatei Ferry et al., 1974 emend. Iino et al., 2010", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+70d1e3ea-17f2-56be-9960-88ef0929de77: [{:input=>"Methanothermobacter thermautotrophicus str. delta h", :match=>"Methanothermobacter thermautotrophicus (Zeikus and Wolfe, 1972) Wasserfallen et al., 2000", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+0c554945-4c3e-5e37-b42d-51cda98b4bb8: [{:input=>"Methylibium petroleiphilum", :match=>"Methylibium petroleiphilum Nakatsu et al., 2006 emend. Stackebrandt et al., 2009", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+cb942f06-f37a-51ac-9919-06cd39b683fd: [{:input=>"Micrococcus luteus", :match=>"Micrococcus luteus (Schroeter, 1872) Cohn, 1872 emend. Wieser et al., 2002", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+748aa0af-3ef8-50be-9593-d2f503b9083e: [{:input=>"Mitrella (Clinurella)", :match=>"Mitrella", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+feb99f8a-68dd-56df-b173-214965179824: [{:input=>"Paracoccus denitrificans", :match=>"Paracoccus denitrificans (Beijerinck and Minkman, 1910) Davis, 1969 emend. Rainey et al., 1999", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+9d7dbdb7-cf1a-5e43-ad99-6c18292079d7: [{:input=>"Phyllobacterium myrsinacearum", :match=>"Phyllobacterium myrsinacearum Knösel, 1984 emend. Mergaert et al., 2002", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+a00cd357-4a5b-51cf-b53a-5183d756c609: [{:input=>"Peperomia", :match=>"Peperomia st.-johnii Yunck.", :ed=>"0", :accepted=>"Peperomia rapensis Forest Brown", :score=>"0.75"}]
+
+3fb8cdc9-7920-5969-9e04-fa28f5ea9ed6: [{:input=>"Prosthecochloris aestuarii", :match=>"Prosthecochloris aestuarii Gorlenko, 1970 emend. Imhoff, 2003", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+1e3a534b-60db-5855-8c1b-9b727e17251d: [{:input=>"Pseudomonas syringae pv. phaseolicola", :match=>"Pseudomonas syringae van Hall, 1902", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+7a612341-a5d7-5c43-9bd5-33f261923f06: [{:input=>"Pseudomonas syringae pv. tomato", :match=>"Pseudomonas syringae van Hall, 1902", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+90f4e818-8924-5656-b120-02fdc671ac17: [{:input=>"PyuraXdura", :match=>"Pyura dura Heller, 1877", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+6d3f206d-8b93-530d-860a-15cf8064a681: [{:input=>"Rhizobium leguminosarum", :match=>"Rhizobium leguminosarum (Frank, 1879) Frank, 1889 emend. Ramírez-Bahena et al., 2008", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+4d926f23-16d2-524b-9a2b-62cbe6fdaa24: [{:input=>"Streptococcus dysgalactiae subsp equisimilis", :match=>"Streptococcus dysgalactiae equisimilis Vandamme et al., 1996 emend. Vieira et al., 1998", :ed=>"0", :accepted=>nil, :score=>"0.999"}]
+
+9a922de8-dda6-54ae-beb8-2b1acc0a0e28: [{:input=>"SymplegmaX", :match=>"Symplegma", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+d4f37f38-5557-5854-8795-60a2acab70aa: [{:input=>"Trochita (Calyptrea)", :match=>"Trochita", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+f09b21a8-4f93-5544-a04b-c6cc05e8779f: [{:input=>"Ureaplasma urealyticum", :match=>"Ureaplasma urealyticum Shepard et al., 1974 emend. Robertson et al., 2002", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+b9de4e5d-a300-5340-a59b-f6746378238c: [{:input=>"Xanthomonas axonopodis pv. citri", :match=>"Xanthomonas axonopodis Starr and Garces, 1950 emend. Vauterin et al., 1995", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+fe258ae7-fe22-55fc-8c2d-7cdabbf22a97: [{:input=>"Xanthomonas campestris", :match=>"Xanthomonas campestris (Pammel, 1895) Dowson, 1939 emend. Vauterin et al., 1995", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+6ecbd547-e748-5a0b-ab0e-7b812fa36fe5: [{:input=>"Xanthomonas campestris pv. campestris", :match=>"Xanthomonas campestris (Pammel, 1895) Dowson, 1939 emend. Vauterin et al., 1995", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+08050895-a0f5-5d69-a927-023e389b5469: [{:input=>"Xanthomonas campestris pv. vesicatoria", :match=>"Xanthomonas campestris (Pammel, 1895) Dowson, 1939 emend. Vauterin et al., 1995", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+
+
+
+Exact canonical matches unique for gnindex
+
+b87b7ecc-4836-5619-8b2f-b083e4830c82: [{:input=>"Drosophila", :match=>"Drosophila obscura-x Burla, 1951", :ed=>"0", :accepted=>"Drosophila subsilvestris Hardy & Kaneshiro, 1968", :score=>nil}]
+
+65b33abe-4a81-5eaa-b597-75f513d17a7c: [{:input=>"Phytophthora ramorum", :match=>"Phytophthora ramorum Werres, De Cock & Man in 't Veld, 2001", :ed=>"0", :accepted=>nil, :score=>nil}]
+
+50546381-efcb-5acd-bb88-19745889d46e: [{:input=>"Litoria ewingii", :match=>"Litoria ewingii (Duméril and Bibron, 1841)", :ed=>"0", :accepted=>nil, :score=>nil}]
+
+12eec259-c281-555c-82d2-caae2052e916: [{:input=>"Litoria moorei", :match=>"Litoria moorei (Copland, 1957)", :ed=>"0", :accepted=>nil, :score=>nil}]
+
+edd55de9-0f8f-5875-a54c-f912280decdf: [{:input=>"Rhynchophorus", :match=>"Rhynchophorus 13punctatus Herbst, J.F.W., 1795", :ed=>"0", :accepted=>"Rhynchophorus tredecimpunctatus Herbst, J.F.W., 1795", :score=>nil}]
+
+10d5547e-8d4f-5bf7-b3ed-3a9c1d21371a: [{:input=>"Saccharomyces", :match=>"Saccharomyces cerevisiae-agavica-sylvestre Carbajal, 1901", :ed=>"0", :accepted=>"Saccharomyces cerevisiae Meyen ex E.C. Hansen, 1883", :score=>nil}]
+
