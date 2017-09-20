@@ -5,7 +5,8 @@ require 'csv'
 def row_item(r)
   accepted_name = r['acceptedName']
   accepted_name = nil if accepted_name == r['matchedName']
-  { input: r['inputName'], match: r['matchedName'],
+  { verbatim: r['scientificName'], input: r['inputName'],
+    match: r['matchedName'],
     ed: r['matchedEditDistance'], accepted: accepted_name,
     score: r['matchedScore'] }
 end
@@ -43,7 +44,7 @@ exact_match_diff = resolver['Exact string match'].keys -
 
 space
 
-puts "Resolver has 2 additional exact matches because match includes some normalization\n\n"
+puts "EXACT MATCHES UNIQUE TO RESOLVER\n\n"
 exact_match_diff.each do |k|
   puts "%s: %s" % [k ,resolver['Exact string match'][k]]
   puts
@@ -54,7 +55,7 @@ space
 canonical_match_diff = resolver['Canonical form exact match'].keys -
                        gnindex['Canonical form exact match'].keys
 
-puts "Exact canonical matches unique for Resolver\n\n"
+puts "EXACT CANONICAL MATCHES UNIQUE FOR RESOLVER\n\n"
 canonical_match_diff.each do |k|
   puts "%s: %s" % [k ,resolver['Canonical form exact match'][k]]
   puts
@@ -66,8 +67,30 @@ canonical_match_diff = gnindex['Canonical form exact match'].keys -
   resolver['Canonical form exact match'].keys
 
 
-puts "Exact canonical matches unique for gnindex\n\n"
+puts "EXACT CANONICAL MATCHES UNIQUE FOR GNINDEX\n\n"
 canonical_match_diff.each do |k|
   puts "%s: %s" % [k ,gnindex['Canonical form exact match'][k]]
   puts
 end
+
+space
+
+canonical_fuzzy_diff = gnindex['Canonical form fuzzy match'].keys -
+  resolver['Canonical form fuzzy match'].keys
+
+puts "FUZZY MATCHES UNIQUE FOR GNINDEX\n\n"
+canonical_fuzzy_diff.each do |k|
+  puts "%s: %s" % [k ,gnindex['Canonical form fuzzy match'][k]]
+  puts
+end
+
+space
+
+canonical_fuzzy_diff = resolver['Canonical form fuzzy match'].keys - gnindex['Canonical form fuzzy match'].keys
+
+puts "FUZZY MATCHES UNIQUE FOR RESOLVER\n\n"
+canonical_fuzzy_diff.each do |k|
+  puts "%s: %s" % [k ,resolver['Canonical form fuzzy match'][k]]
+  puts
+end
+

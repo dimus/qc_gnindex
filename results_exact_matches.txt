@@ -1,0 +1,99 @@
+# Resolver exact string matches
+
+96279b05-e9d8-5a7f-9ece-8c7aa331b52b: [{:verbatim=>"HEA", :input=>"HEA", :match=>"Hea", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+## Comment: these happen because of normalization of names in resolver for 'exact string match'. We need to think
+what would be the right thing to do for these. Interim solution: Capitalizing first letter, lowering case of all others in the first word would help this particular case.
+
+
+
+# Exact canonical matches unique for Resolver
+
+39771402-7ee5-5221-a735-07a5a090e751: [{:verbatim=>"Alteromonas macleodii", :input=>"Alteromonas macleodii", :match=>"Alteromonas macleodii Baumann et al., 1972 emend. Yi et al., 2004 emend. Vandecandelaere et al., 2008", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+## Comment: `emend.` (corrected by) is parsed as species. Solution: include (emend., emend) into parser preprocessing.
+
+12e49514-24be-5127-93be-816b98b14185: [{:verbatim=>"Leptodactylus gr. wagneri", :input=>"Leptodactylus gr. wagneri", :match=>"Leptodactylus", :ed=>"0", :accepted=>nil, :score=>"0.75"}]
+
+## Parser needs to understand groups.
+
+b1d6747d-6aa3-5b7a-a8ed-7ca53c4b19ac: [{:verbatim=>"Methanosarcina barkeri str. fusaro", :input=>"Methanosarcina barkeri str. fusaro", :match=>"Methanosarcina barkeri Schnellen, 1947", :ed=>"0", :accepted=>nil, :score=>"0.988"}]
+
+## Preprocess "str."
+
+
+
+
+# Exact canonical matches unique for gnindex
+
+b87b7ecc-4836-5619-8b2f-b083e4830c82: [{:verbatim=>"Drosophila", :input=>"Drosophila", :match=>"Drosophila obscura-x Burla, 1951", :ed=>"0", :accepted=>"Drosophila subsilvestris Hardy & Kaneshiro, 1968", :score=>"0.731"}]
+
+## Allow 1 character after dash in gnparser
+
+edd55de9-0f8f-5875-a54c-f912280decdf: [{:verbatim=>"Rhynchophorus", :input=>"Rhynchophorus", :match=>"Rhynchophorus 13punctatus Herbst, J.F.W., 1795", :ed=>"0", :accepted=>"Rhynchophorus tredecimpunctatus Herbst, J.F.W., 1795", :score=>"0.731"}]
+
+## Allow number without a dash (with a warning and quality 3)
+
+10d5547e-8d4f-5bf7-b3ed-3a9c1d21371a: [{:verbatim=>"Saccharomyces", :input=>"Saccharomyces", :match=>"Saccharomyces cerevisiae-agavica-sylvestre Carbajal, 1901", :ed=>"0", :accepted=>"Saccharomyces cerevisiae Meyen ex E.C. Hansen, 1883", :score=>"0.731"}]
+
+## Still not sure if we should allow more than one dash
+
+50546381-efcb-5acd-bb88-19745889d46e: [{:verbatim=>"litoria ewingii", :input=>"Litoria ewingii", :match=>"Litoria ewingii (Duméril and Bibron, 1841)", :ed=>"0", :accepted=>nil, :score=>"0.953"}]
+
+## Good, but the score needs to go down
+
+
+
+FUZZY MATCHES UNIQUE FOR GNINDEX
+
+665823d4-f5c4-59ec-8e35-e6f4a5d4757a: [{:verbatim=>"Acomp", :input=>"Acomp", :match=>"Acoma", :ed=>"1", :accepted=>nil, :score=>"0.5"}]
+
+9b5466a3-0bcc-5cc8-be77-54cd8101b62d: [{:verbatim=>"Aip Noct", :input=>"Aip Noct", :match=>"Aix", :ed=>"1", :accepted=>nil, :score=>"0.5"}]
+
+c48b6559-fcd6-5897-8bda-da6bf4da6ac6: [{:verbatim=>"Aral Xyle", :input=>"Aral Xyle", :match=>"Ara", :ed=>"1", :accepted=>nil, :score=>"0.5"}]
+
+## Add heuristic rules for matches: No fuzzy match for uninomials shorter than 6 letters, no more than 1 ed per 5 letters per word
+
+7e09592a-2bd4-589c-88cf-5eeed66461f1: [{:verbatim=>"Blackites cf. spinosus base", :input=>"Blackites cf. spinosus base", :match=>"Brackites spinosus Monnet and Bucher 2005", :ed=>"1", :accepted=>nil, :score=>"0.731"}]
+
+## Check why 'base' is removed by parser
+
+
+
+FUZZY MATCHES UNIQUE FOR RESOLVER
+
+9819f7d2-fcf5-5ac7-b1df-1d35cd18e0a9: [{:verbatim=>"Allobophora chlorotica", :input=>"Allobophora chlorotica", :match=>"Allolobophora chlorotica (Savigny, 1826)", :ed=>"2", :accepted=>nil, :score=>"0.75"}]
+
+# Find out how to do more than 1 ed
+
+938d3659-1e85-5dee-92d4-bb763fbdf8bb: [{:verbatim=>"Anticorbula sinuosum", :input=>"Anticorbula sinuosum", :match=>"Anticorbula sinuosa (Morrison, 1943)", :ed=>"2", :accepted=>nil, :score=>"0.75"}]
+
+351fa4ea-69e8-528f-981d-b15d81867dd3: [{:verbatim=>"Bos grunniensis", :input=>"Bos grunniensis", :match=>"Bos grunniens Linnaeus, 1766", :ed=>"2", :accepted=>nil, :score=>"0.75"}]
+
+5a474555-187f-597b-b979-e863f31ec6b2: [{:verbatim=>"Brachycera", :input=>"Brachycera", :match=>"Brachycerus", :ed=>"2", :accepted=>nil, :score=>"0.5"}]
+
+767ed8b1-d474-572b-a35d-5687d91ac546: [{:verbatim=>"Cranopsis coniferus", :input=>"Cranopsis coniferus", :match=>"Cranopsis conifera (Cope, 1862)", :ed=>"2", :accepted=>"Incilius coniferus (Cope, 1862)", :score=>"0.75"}]
+
+# Get stemming working again
+
+d1f122ca-f72d-5c73-b134-051c9ce54a3c: [{:verbatim=>"Aphrodina", :input=>"Aphrodina", :match=>"Aphrosina", :ed=>"1", :accepted=>nil, :score=>"0.5"}]
+
+a5db531c-f5df-5e76-8c4c-1ad04dd86fbf: [{:verbatim=>"Asteridae", :input=>"Asteridae", :match=>"Asteriidae", :ed=>"1", :accepted=>nil, :score=>"0.5"}]
+
+b25e9447-8720-5157-a71b-6a754efdf13e: [{:verbatim=>"Caricella", :input=>"Caricella", :match=>"Carinella", :ed=>"1", :accepted=>nil, :score=>"0.5"}]
+
+6c7aac26-f4a7-517b-a7ec-267012587d21: [{:verbatim=>"Chriocentrus dorab", :input=>"Chriocentrus dorab", :match=>"Chirocentrus dorab (non Swainson, 1775)", :ed=>"1", :accepted=>"Chirocentrus nudus Swainson, 1839", :score=>"0.75"}]
+
+e0a2e08f-35a9-55ce-8173-51a922a9b6fb: [{:verbatim=>"Cyphoderis", :input=>"Cyphoderis", :match=>"Cyphomeris", :ed=>"1", :accepted=>nil, :score=>"0.5"}]
+
+b8eeab4c-29ed-51e0-a4f1-863b2eb45696: [{:verbatim=>"Paranomia", :input=>"Paranomia", :match=>"Paranosia", :ed=>"1", :accepted=>nil, :score=>"0.5"}]
+
+7dfa5ed8-122d-5873-8c7d-558ecacc57e5: [{:verbatim=>"Pleurotoma", :input=>"Pleurotoma", :match=>"Pleurostoma", :ed=>"1", :accepted=>nil, :score=>"0.5"}]
+
+b2f04a6e-1490-56fa-9cba-f64358c70e4b: [{:verbatim=>"Rhinella castaenotica", :input=>"Rhinella castaenotica", :match=>"Rhinella castaneotica (Caldwell, 1991)", :ed=>"1", :accepted=>nil, :score=>"0.75"}]
+
+23f85c50-f1d6-5928-9701-cfd0d2a1e2ce: [{:verbatim=>"Solenosteria fusiformis", :input=>"Solenosteria fusiformis", :match=>"Solenosteira fusiformis (Blainville, 1832)", :ed=>"1", :accepted=>nil, :score=>"0.75"}]
+
+e05d7c46-605b-55f5-9f64-5afd46e308a6: [{:verbatim=>"Tripnuestes gratilla", :input=>"Tripnuestes gratilla", :match=>"Tripneustes gratilla (Linnaeus, 1758)", :ed=>"1", :accepted=>nil, :score=>"0.75"}]
+
+# Hmm why these above did not work
